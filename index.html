@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Anniversary Amma & Nanna</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- HERO -->
+<section class="hero">
+    <h1>Happy Anniversary Amma & Nanna ❤️</h1>
+    <p>Celebrating love through memories</p>
+
+    <button class="music-btn" onclick="startJourney()">
+        Start the Journey ✨
+    </button>
+</section>
+
+
+    <!-- SLIDESHOW -->
+<section class="slideshow-section" id="slideshowSection" style="display:none;">
+    <div class="slideshow">
+        <img id="slideImage" src="images/photo1.jpg" alt="Memory">
+        <p id="slideText">Forever begins here 💕</p>
+    </div>
+</section>
+
+
+    <!-- MUSIC -->
+    <audio id="bgMusic">
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="playMusic()">Play Music 🎵</button>
+
+    <!-- Envelope Section -->
+<div id="envelope" class="envelope-container" style="display:none;">
+
+    <div class="envelope-image" onclick="openLetter()">
+        <div class="envelope-flap"></div>
+        <img src="images/envelope.png" alt="Envelope">
+    </div>
+
+    <div class="letter">
+        <h2>Dear Amma & Nanna ❤️</h2>
+        <p id="letterText">
+        Every picture you just saw holds a memory,
+        and every memory holds the love you have shown me.
+
+        Your journey together is my biggest inspiration.
+        Thank you for teaching me what love, patience,
+        and family truly mean.
+
+        Happy Anniversary Amma & Nanna 🤍
+        With all my love.
+        </p>
+    </div>
+
+    <p class="tap-text">Tap the envelope 💌</p>
+</div>
+
+
+    <footer>
+        Made with ❤️ by your child
+    </footer>
+
+    <!-- SCRIPT MUST BE LAST -->
+    <script src="script.js"></script>
+
+</body>
+</html>

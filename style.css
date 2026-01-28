@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff5f7;
+    text-align: center;
+    color: #444;
+}
+
+/* Hero */
+.hero {
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #c2185b;
+}
+
+/* Slideshow */
+.slideshow-section {
+    padding: 60px 20px;
+}
+
+.slideshow {
+    background: white;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.slideshow img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 20px;
+    transition: opacity 0.8s ease;
+}
+
+.slideshow p {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/* Music Button */
+.music-btn {
+    margin: 30px;
+    padding: 12px 25px;
+    border: none;
+    background: #c2185b;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.music-btn:hover {
+    background: #a3154a;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #f3dce2;
+}
+/* Envelope container */
+.envelope-container {
+    margin: 100px auto;
+    width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+/* Envelope image */
+.envelope-image {
+    position: relative;
+    z-index: 2;
+}
+
+.envelope-image img {
+    width: 100%;
+    display: block;
+}
+
+/* Envelope flap */
+.envelope-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: white;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transform-origin: top;
+    transition: transform 1s ease;
+    z-index: 3;
+}
+
+/* Letter */
+.letter {
+    position: absolute;
+    bottom: 20px; /* JUST above envelope opening */
+    left: 5%;
+    width: 90%;
+    max-height: 280px;
+    background: #fffdf8;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    overflow-y: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    transform: translateY(100%);
+    transition: transform 1.2s ease;
+    z-index: 1;
+    word-wrap: break-word;
+    white-space: pre-line;
+
+
+}
+
+/* Open state */
+.envelope-container.open .letter {
+    transform: translateY(-65%);
+    z-index: 4;
+}
+
+.envelope-container.open .envelope-flap {
+    transform: rotateX(180deg);
+}
+
+/* Tap text */
+.tap-text {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
